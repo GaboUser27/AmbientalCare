@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Reporte Ambiental</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,13 +13,14 @@
 
     <!-- Google reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="contenedor-imagen">
         <nav class="navbar">
             <div class="navbar-container">
-                <a href="index.html" class="navbar-logo"><img src="Imagenes/logoNoFondo.png" height="250" width="250" /></a>
+                <a href="index.html" class="navbar-logo"><img src="Imagenes/logoNoFondo.png" height="250"
+                        width="250" /></a>
                 <button class="navbar-toggle">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -29,66 +31,66 @@
                     <li>
                         <a href="https://api.whatsapp.com/send? phone=50661905980&text=¡Hola me gustaría agendar una cita!"
                             target="_blank">
-                            Agendar Cita
+                            Contactar Profesionales
                         </a>
                     </li>
-                    <li><a href="Blog.html">Servicios</a></li>
-                    <li><a href="sobre-nosotros.html">Nosotros</a></li>
-                    <li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="Blog.html">Numeros de Emergencia</a></li>
                     <li><a href="acercaDe.html">Acerca De</a></li>
                 </ul>
             </div>
         </nav>
-        <br /><br /><br /><br /><br /><br /><br />
-        <section class="contenedor-central">
-            <p class="textoBienvenida">
-                Bienvenidos a <br />
-                Pretty & Relax
-            </p>
-        </section>
-        <br />
+        <br /><br /><br /><br /><br /><br />
+        <center>
+            <section class="contenedor-central">
+                <p class="textoBienvenida">
+                    Bienvenido a AmbientalCare, tu sitio de confianza para reporte de problemas ambientales en tu
+                    zona<br />
+                </p>
+            </section>
+        </center>
+
+        <br /><br /><br /><br />
     </header>
 
-    <section id="map-section">
-      <h2>Tu ubicación</h2>
-      <div id="map"></div>
-    </section>
+    <div class="contenedor-mapaRecap">
+        <section id="map-section">
+            <h2>Tu ubicación</h2>
+            <div id="map"></div>
+        </section>
+        <br><br><br>
 
-    <section>
-      <h2 style="margin-left: 25px;">Verifica que no eres un robot</h2>
-      <div
-        class="g-recaptcha"
-        style="margin-left: 25px;"
-        data-sitekey="6LeMKgIsAAAAADO_holfWYxbsFSFwMCwXALF7Ptx"
-        data-callback="mostrarFormulario"
-      ></div>
-    </section>
 
-    <section id="form-section">
-      <h2>Formulario de reporte</h2>
-      <form id="report-form" onsubmit="return validateCaptcha()">
-        <input type="text" name="nombre" placeholder="Tu nombre" required />
-        <input type="email" name="email" placeholder="Tu correo" required />
-        <select name="tipo" required>
-          <option value="">Tipo de problema</option>
-          <option value="basura">Basura</option>
-          <option value="contaminación">Contaminación</option>
-          <option value="incendio">Incendio forestal</option>
-          <option value="otro">Otro</option>
-        </select>
-        <textarea
-          name="descripcion"
-          placeholder="Describe el problema"
-          required
-        ></textarea>
-        <button type="submit">Enviar reporte</button>
-      </form>
-    </section>
+        <div class=".contenedor-Recap">
+            <section>
+                <h2 style="margin-left: 25px;">Verifica que no eres un robot</h2>
+                <div class="g-recaptcha" style="margin-left: 25px;"
+                    data-sitekey="6LeMKgIsAAAAADO_holfWYxbsFSFwMCwXALF7Ptx" data-callback="mostrarFormulario"></div>
+            </section>
+            <section id="form-section">
+                <h2>Formulario de reporte</h2>
+                <form id="report-form" onsubmit="return validateCaptcha()">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required />
+                    <input type="email" name="email" placeholder="Tu correo" required />
+                    <select name="tipo" required>
+                        <option value="">Tipo de problema</option>
+                        <option value="basura">Basura</option>
+                        <option value="contaminación">Contaminación</option>
+                        <option value="incendio">Incendio forestal</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <textarea name="descripcion" placeholder="Describe el problema" required></textarea>
+                    <button type="submit">Enviar reporte</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
     <script src="scriptReMa.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

@@ -27,7 +27,7 @@
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
                   attribution: "&copy; OpenStreetMap contributors",
-                  maxZoom: 19,
+                  maxZoom: 20,
                   minZoom: 3,
                 }
               ).addTo(map);
