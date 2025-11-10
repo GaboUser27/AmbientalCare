@@ -100,30 +100,6 @@ button:hover {
     transition: all 0.3s ease-in-out;
 }
 
-.contenedor-fondoColor {
-    width: 100%;
-    min-height: 100vh;
-    background: #502314;
-
-    background: linear-gradient(to bottom,
-            #1a0a05 0%,
-            /* Marrón muy oscuro para el header */
-            #3b1408 5%,
-            /* Marrón cálido profundo */
-            #a63c0c 35%,
-            /* Naranja rojizo sutil */
-            #d95f1c 50%,
-            /* Naranja brillante (punto focal) */
-            #8c2f0a 70%,
-            /* Rojo-marrón cálido */
-            #2a0f0a 800%
-            /* Marrón oscuro profundo */
-        );
-    background-size: cover;
-    background-position: center top;
-    background-attachment: fixed;
-}
-
 /*Tablets o celulares grandes*/
 @media (max-width: 880px) {
     .navbar {
