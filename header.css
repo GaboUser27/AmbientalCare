@@ -79,7 +79,7 @@ button:hover {
 .navbar-container .navbar-menu li a:hover,
 .navbar-container .navbar-menu li a.active {
     color: #162530;
-    background: rgba(255, 165, 20, 0.8);
+    background-color: #66bb6a;
     border: 2px solid #fff;
 }
 
